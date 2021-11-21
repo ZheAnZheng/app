@@ -8,6 +8,18 @@ db.on('error',()=>{
 })
 db.once('open',()=>{
     console.log('db connected');
+    createUser();
+    console.log('done');
 })
+
+function createUser(){
+    for(let i=0 ; i<10 ; i++){
+        User.create({
+            name:`name-${i}`,
+            account:`account-${i}`,
+            password:`password${i}`
+        })
+    }
+}
 
 

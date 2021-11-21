@@ -17,5 +17,5 @@ const userSchema=new Schema({
         require:true
     }
 })
-
+//model為在mongodb://mongo:27017 的users的collection的model
 module.exports=mongoose.model("user",userSchema);
