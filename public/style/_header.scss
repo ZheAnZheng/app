@@ -54,10 +54,24 @@ header{
 .hambuger-check{
     float:right;
 }
+.main{
+    padding-top: 80px;
+}
+.hambuger-check:checked ~ .modal{
+    display: block;
+    transform: scale(1,1);
+    -webkit-transform: scale(1,1);  
+}
 .modal{
     position:absolute ;
     background-color: $primary-bg;
+    display: block;
     top: 70px;
     width: 100%;
-    height:80vh;
+    height:100vh;
+    
+    transform-origin: left;
+    -webkit-transform: scale(0,1);
+    transform: scale(0,1);
+    transition: all 0.5s ease-in-out ;
 }

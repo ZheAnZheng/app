@@ -1,4 +1,7 @@
 @import "color";
 @import "reset";
 @import "setting";
-@import "header"
+@import "header";
+html{
+    height: 100%;
+}
