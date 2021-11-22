@@ -17,6 +17,7 @@ db.once('open',()=>{
 app.engine('hbs',exhbs({defaultLayout:'main',extname:".hbs"}));
 app.set("view engine","hbs");
 
+app.use(express.static('public'));
 
 app.get('/',(req,res)=>{
     res.render('login')

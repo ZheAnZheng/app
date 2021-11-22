@@ -5,9 +5,20 @@
         {{!-- to tell browser what compile i use --}}
         <meta charset="utf-8" />
         <title>diary</title>
+        <link rel="stylesheet" href="styles/initialize.min.css">
+        <link rel="stylesheet"href="/style/index.css">
+        
     </head>
     <body>
-        <header>NAV BAR</header>
+        <header>
+            
+            <label class="hambuger-box"  for="hambuger-toggle"><span class="hambuger"></span></label>
+            <input id="hambuger-toggle" class="hambuger-check" type="checkbox"/>
+            
+            
+            <div class="title"> diary</div>
+        </header>
+        <div class="modal"></div>
         {{{body}}}
     </body>
 </html>
